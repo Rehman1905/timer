@@ -27,11 +27,15 @@ function stop() {
 }
 
 function reset() {
+    document.querySelector('#timer').innerHTML = `00:00:00`
     document.querySelector('#dovr').innerHTML = ''
     reqem = 0;
 }
 
 function lap() {
+    if(a==0){
+        return
+    }
     if (a) { 
         const dovr = document.querySelector('#dovr')
         const newDiv = document.createElement('div')
