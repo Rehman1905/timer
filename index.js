@@ -27,7 +27,6 @@ function stop() {
 }
 
 function reset() {
-    document.querySelector('#timer').innerHTML = `00:00:00`;
     document.querySelector('#dovr').innerHTML = ''
     reqem = 0;
 }
