@@ -33,7 +33,7 @@ function reset() {
 }
 
 function lap() {
-    if(a==0){
+    if(reqem==0){
         return
     }
     if (a) { 
