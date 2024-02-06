@@ -33,15 +33,14 @@ function reset() {
 }
 
 function lap() {
-    if(reqem==0){
-        return
-    }
     if (a) { 
-        const dovr = document.querySelector('#dovr')
-        const newDiv = document.createElement('div')
-        newDiv.classList.add('lap-div')
-        dovr.append(newDiv)
-        newDiv.innerHTML = `${saat}:${deqiqe}:${saniye}`
+        setTimeout(() => {
+            const dovr = document.querySelector('#dovr')
+            const newDiv = document.createElement('div')
+            newDiv.classList.add('lap-div')
+            dovr.append(newDiv)
+            newDiv.innerHTML = `${saat}:${deqiqe}:${saniye}`;
+        }, 100);
     } else {
         alert('Press the start button');
     }
