@@ -34,13 +34,11 @@ function reset() {
 
 function lap() {
     if (a) { 
-        setTimeout(() => {
-            const dovr = document.querySelector('#dovr')
-            const newDiv = document.createElement('div')
-            newDiv.classList.add('lap-div')
-            dovr.append(newDiv)
-            newDiv.innerHTML = `${saat}:${deqiqe}:${saniye}`;
-        }, 100);
+        const dovr = document.querySelector('#dovr')
+        const newDiv = document.createElement('div')
+        newDiv.classList.add('lap-div')
+        dovr.append(newDiv)
+        newDiv.innerHTML = `${saat}:${deqiqe}:${saniye}`
     } else {
         alert('Press the start button');
     }
